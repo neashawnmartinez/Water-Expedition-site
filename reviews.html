@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Customer Reviews | Water Expedition</title>
+<meta name="description" content="See what guests say about our guided tours in Belize.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="logo.png" alt="Water Expedition logo"><span>Water Expedition</span></a>
+    <nav><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="reviews.html" class="active" aria-current="page">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+  </div>
+</header>
+<div class="page-banner"><div class="wrap"><h1>Customer Reviews</h1><p>Hear from guests who have explored with us.</p></div></div>
+
+<section>
+  <div class="wrap">
+    <div class="rating-box"><div class="big">5.0</div><div class="stars">★★★★★</div><small>Average from our guests</small></div>
+    <div class="reviews">
+      <blockquote><div class="stars">★★★★★</div><p>Amazing scuba diving experience! The guides were professional and the water was crystal clear. Highly recommend!</p><cite>Junior C.</cite></blockquote>
+      <blockquote><div class="stars">★★★★★</div><p>Booked a fishing trip online and everything went smoothly. Caught some great fish and had a wonderful day on the water.</p><cite>Neashawn M.</cite></blockquote>
+      <blockquote><div class="stars">★★★★★</div><p>The sea excursion was perfect for our family. Easy booking process and beautiful views of Belize.</p><cite>Alexia S.</cite></blockquote>
+    </div>
+  </div>
+</section>
+<section class="alt-bg">
+  <div class="wrap">
+    <form class="book-form" id="review-form" novalidate>
+      <h3>Share Your Experience</h3>
+      <div class="grid">
+        <label>Your name<input type="text" id="r-name" placeholder="Full name" required></label>
+        <label>Trip you took<select id="r-trip" required><option value="">Choose one…</option><option>Sea Excursion</option><option>Fishing Trip</option><option>Scuba Diving</option></select></label>
+        <label>Rating<select id="r-rating"><option value="5">★★★★★ (5)</option><option value="4">★★★★ (4)</option><option value="3">★★★ (3)</option><option value="2">★★ (2)</option><option value="1">★ (1)</option></select></label>
+      </div>
+      <label>Your review<textarea id="r-text" rows="4" placeholder="Tell us about your day on the water…" required></textarea></label>
+      <p class="form-msg" id="review-msg" role="alert"></p>
+      <div class="form-actions"><button type="submit" class="btn">Send Review</button></div>
+      <p class="fine">Opens your email app so you can send your review to us.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="info">
+      <div><strong>Phone</strong><a href="tel:+5016542660">(+501) 654-2660</a></div>
+      <div><strong>Email</strong><a href="mailto:WaterExpedition@gmail.com">WaterExpedition@gmail.com</a></div>
+      <div><strong>Address</strong>Belize</div>
+    </div>
+    <p class="copy">&copy; 2026 Water Expedition. All rights reserved.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
